@@ -89,6 +89,8 @@ spec:
     targetCPUUtilizationPercentage: #{target-CPU}#
 ```
 
-**minReplicas**: At least 3 replicas must be defined to ensure the high availability of resources
-**maxReplicas**: This is defined according to business requirements.
-**targetCPUUtilizationPercentage**: The CPU percentage must be defined according to the needs of each project. Note that for this value the limit is not 100%, that is, there may be cases where a value of 150% makes sense.
+- **minReplicas**: At least 3 replicas must be defined to ensure the high availability of resources
+
+- **maxReplicas**: This is defined according to business requirements.
+
+- **targetCPUUtilizationPercentage**: The CPU percentage must be defined according to the needs of each project. Note that for this value the limit is not 100%, that is, there may be cases where a value of 150% makes sense.
