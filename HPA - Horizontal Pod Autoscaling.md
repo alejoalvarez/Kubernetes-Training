@@ -14,15 +14,15 @@ A method used in cloud computing, whereby the amount of computational resources,
 Group of one or more containers, with shared storage / network, and a specification on how to run the containers.
 
 <p align="center">
-<img height="400" src="https://github.com/alejoalvarez/Images/blob/trunk/kubernetes/hpa1.png">
+<img height="400" src="https://user-images.githubusercontent.com/13514156/120510340-f2ba4c80-c38e-11eb-9b8c-31bd9930331a.png">
 </p>
 
 <p align="center">
-<img height="400" src="https://github.com/alejoalvarez/Images/blob/trunk/kubernetes/hpa2.png">
+<img height="400" src="https://user-images.githubusercontent.com/13514156/120510345-f352e300-c38e-11eb-8597-a02a71afcb7c.png">
 </p>
 
 <p align="center">
-<img height="400" src="https://github.com/alejoalvarez/Images/blob/trunk/kubernetes/hpa3.png">
+<img height="400" src="https://user-images.githubusercontent.com/13514156/120510347-f352e300-c38e-11eb-99ff-ff09ac7cb8ba.png">
 </p>
 
 The HPA is implemented as a control loop. Periodically check the CPU utilization of the pods you are targeting. (The HPA period is controlled by the controller prompt: horizontal-pod-autoscaler-sync period. The default is 30 seconds). Then, it compares the arithmetic mean of the CPU utilization of the pods with the goal of adjusting the number of replicas if necessary.
