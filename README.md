@@ -102,6 +102,26 @@ Responsible to intetact with underlying cloud provider (AWS, Google Cloud, Azure
 <img height="450" src="https://user-images.githubusercontent.com/13514156/120706330-8e76b600-c47e-11eb-9d38-9ab891c2efb2.png">
 </p>
 
+
+#### ```kubectl```
+- Kubernetes Command Line Toolds
+- Run Commands gains your cluster
+	- Deploy
+	- Inspect
+	- Edit resources
+	- Debug
+	-  View logs
+
+#### ```Pod```
+Smallest drop down unit that can be created
+- It can contain 1 or more containers
+- Application containers that are in the same pod have the following benefits:
+	-  Share an IP address and port space
+	-  They share the same host name
+	-  Can communicate with each other through native interprocess communication (IPC)
+
+
+
 ### Worker Node 
 
 - Machine within cluster (VM or physical Machine running often linux, usually in the microservices world they are EC2 instances on AWS)
@@ -111,7 +131,7 @@ Responsible to intetact with underlying cloud provider (AWS, Google Cloud, Azure
 - Runs Pods 
 
 <p align="center">
-<img height="500" src="https://user-images.githubusercontent.com/13514156/120705777-dc3eee80-c47d-11eb-9c28-2b20c47df06c.png">
+<img height="500" src="https://user-images.githubusercontent.com/13514156/120708362-165dbf80-c481-11eb-858b-62cdd647ef4c.png">
 </p>
 
 Workers worker nodes are responsible for running the pods that are programmed in them. The main kubernetes components that exist on worker nodes are:
