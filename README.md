@@ -1,7 +1,7 @@
 # Kubernetes
 
-<p align="center">
-<img height="60" src="https://user-images.githubusercontent.com/13514156/120697915-ef4cc100-c473-11eb-91cb-aacada43e173.png">
+<p>
+<img height="60" src="https://user-images.githubusercontent.com/13514156/120713690-e108a000-c487-11eb-9c3f-fce7df817602.png">
 </p>
 
 ## Generalities
