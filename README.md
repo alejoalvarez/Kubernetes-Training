@@ -102,7 +102,6 @@ Responsible to intetact with underlying cloud provider (AWS, Google Cloud, Azure
 <img height="450" src="https://user-images.githubusercontent.com/13514156/120706330-8e76b600-c47e-11eb-9d38-9ab891c2efb2.png">
 </p>
 
-
 #### ```kubectl```
 - Kubernetes Command Line Toolds
 - Run Commands gains your cluster
@@ -111,16 +110,6 @@ Responsible to intetact with underlying cloud provider (AWS, Google Cloud, Azure
 	- Edit resources
 	- Debug
 	-  View logs
-
-#### ```Pod```
-Smallest drop down unit that can be created
-- It can contain 1 or more containers
-- Application containers that are in the same pod have the following benefits:
-	-  Share an IP address and port space
-	-  They share the same host name
-	-  Can communicate with each other through native interprocess communication (IPC)
-
-
 
 ### Worker Node 
 
@@ -163,11 +152,40 @@ Workers worker nodes are responsible for running the pods that are programmed in
 - CRI - Container Runtime Interface 
   - Interface for 3rd party container runtime
 
+#### ```Pods```
+Smallest drop down unit that can be created
+- It can contain 1 or more containers
+- Application containers that are in the same pod have the following benefits:
+	-  Share an IP address and port space
+	-  They share the same host name
+	-  Can communicate with each other through native interprocess communication (IPC)
 
+### **Namespace**
 
+Allows to define isolation for microservices (logical partitions), they can be created through YAML or command line
 
+### **ReplicaSet**
+Ensures that the number of replicas of the pods is executed
 
+### **Deployment**
 
+- Same as ReplicaSet but provides support for new versions of pods
+- Allows you to control the number of pod replicas and the deployment of new versions of pods
+
+### **DaemonSet**
+Group of pods replicated on all nodes
+
+### **HPA**
+Scale pods in CPU and memory consumption
+
+### **Services**
+It is an abstraction that defines a set of pods and the logic to access them
+
+### **Ingress**
+An API Object that manages external access to services in a cluster
+
+### **Istio**
+Perform mesh services tasks, that is, add components to our microservices without having to modify any of them
 
 
 

@@ -1,11 +1,8 @@
 # Introduction
 Many workloads have a dynamic nature that varies over time and makes it difficult to have a fixed configuration for incoming workloads. But cloud native technologies like Kubernetes allow you to build applications that adapt to changing loads. Kubernetes Autoscaling allows us to define a variable capacity for an application, which is not fixed, but rather guarantees enough capacity to handle a different load. The most direct approach to achieving such behavior is by using a Horizontal Pod Autoscaler (HPA) to horizontally scale the number of pods in the architecture.
 
-
-
 ## How to work? 
 Horizontal Pod Autoscaling (HPA) scales the number of pod replicas. Most of their implementations use CPU and memory as factors in deciding whether to increase or decrease the number of replicas.
-
 
 **Autoscaling**
 A method used in cloud computing, whereby the amount of computational resources, generally measured in terms of the number of active servers, is automatically scaled based on the required load.
